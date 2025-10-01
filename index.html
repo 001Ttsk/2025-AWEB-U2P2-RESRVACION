@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaja Con Patsu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        /*espaciados*/
+        .seccion-datos-personales {
+            padding-bottom: 30px;
+        }
+
+        .seccion-direccion {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .seccion-reservacion {
+            padding-top: 30px;
+        }
+
+        /*celdas*/
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        /*label e imputs*/
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reserva de Habitacion</h1>
+    <table>
+        <!--datos personales-->
+        <tr>
+            <td colspan="5">
+                <h2>Informacion Personal</h2>
+            </td>
+        </tr>
+        <tr class="seccion-datos-personales">
+            <td>
+                <label for="inputNombre">Nombres</label>
+                <input type="text" id="inputNombre" name="inputNombre">
+            </td>
+            <td>
+                <label for="inputApellidos">Apellidos</label>
+                <input type="text" id="inputApellidos" name="inputApellidos">
+            </td>
+            <td>
+                <label for="inputRFC">RFC:</label>
+                <input type="text" id="inputRFC" name="inputRFC">
+            </td>
+            <td>
+                <label for="inputTelefono">Telefono de contacto:</label>
+                <input type="text" id="inputTelefono" name="inputTelefono">
+            </td>
+            <td>
+                <label for="numberPersonas">Cantidad de personas:</label>
+                <input type="number" id="numberPersonas" name="numberPersonas">
+            </td>
+        </tr>
+
+        <!--direccion-->
+        <tr>
+            <td colspan="5">
+                <h2>Dirección</h2>
+            </td>
+        </tr>
+        <tr class="seccion-direccion">
+            <td>
+                <label for="inputCalle">Calle</label>
+                <input type="text" id="inputCalle" name="inputCalle">
+            </td>
+            <td>
+                <label for="inputColonia">Colonia:</label>
+                <input type="text" id="inputColonia" name="inputColonia">
+            </td>
+            <td>
+                <label for="inputNumeroExt">Número Ext:</label>
+                <input type="number" id="inputNumeroExt" name="inputNumeroExt"> 
+            </td>
+            <td>
+                <label for="inputCodigoPostal">Codigo Postal:</label>
+                <input type="number" id="inputCodigoPostal" name="inputCodigoPostal">
+            </td>
+            <td>
+                <label for="selectEstado">Estado:</label>
+                <select id="selectEstado" name="selectEstado">
+                    <option>Seleccione...</option>
+                    <option>Morelos</option>
+                    <option>Ciudad de méxico</option>
+                    <option>Yucatan</option>
+                    <option>Colima</option>
+                    <option>Baja California</option>
+                    <option>Baja California Sur</option>
+                    <option>Monterrey</option>
+                    <option>Sonora</option>
+                    <option>Tamaulipas</option>
+                    <option>Chiapas</option>
+                    <option>Estado de México</option>
+                    <option>Guerrero</option>
+                    <option>Michoacan</option>
+                    <option>Veracruz</option>
+                    <option>Quintana Roo</option>
+                    <option>San Luis Potosi</option>
+                    <option>Puebla</option>
+                    <option>Hidalgo</option>
+                </select>
+            </td>
+        </tr>
+
+        <!--reservacionm-->
+        <tr>
+            <td colspan="5">
+                <h2>Reservacion</h2>
+            </td>
+        </tr>
+        <tr class="seccion-reservacion">
+            <td>
+                <label for="inputFechaEntrada">Fecha de entrada:</label>
+                <input type="date" id="inputFechaEntrada" name="inputFechaEntrada">
+            </td>
+            <td>
+                <label for="inputFechaSalida">Fecha de salida:</label>
+                <input type="date" id="inputFechaSalida" name="inputFechaSalida">
+            </td>
+            <td>
+                <label for="selectHabitación">Tipos de Habitación</label>
+                <select id="selectHabitación" name="Habitación">
+                    <option>Seleccione</option>
+                    <option>Simple</option>
+                    <option>Duplex</option>
+                    <option>Premium</option>
+                </select>
+            </td>
+            <td>
+                <label for="selectCama">Tipo de Cama:</label>
+                <select id="selectCama" name="cama">
+                    <option>seleccione...</option>
+                    <option>individual</option>
+                    <option>matrimonial</option>
+                    <option>king size</option>
+                    <option>queen size</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
